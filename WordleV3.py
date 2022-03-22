@@ -122,10 +122,10 @@ def search():
         elif option == 5:
             #failing here 
             print("")
-            print(before)
-            print("")
-            with open('new_word.txt', "r") as T:
+            
+            with open('new_word.txt', "w") as T:
                 T.write(before)
+                T.close()
                 print(before)
 
 
