@@ -21,17 +21,17 @@ def search():
                 words = contents
                 
 
-                next_word = words[words.index(Yesterdays_Wordle)- 7]
+                next_word = words[words.index(Yesterdays_Wordle)+ 7]
             
 
                 #letter 2
-                next_word1 = words[words.index(Yesterdays_Wordle)- 8]
+                next_word1 = words[words.index(Yesterdays_Wordle)+ 8]
                 #Letter 3
-                next_word2 = words[words.index(Yesterdays_Wordle)- 9]
+                next_word2 = words[words.index(Yesterdays_Wordle)+ 9]
                 #Letter 4
-                next_word3 = words[words.index(Yesterdays_Wordle)- 10]
+                next_word3 = words[words.index(Yesterdays_Wordle)+ 10]
                 #Letter 5
-                next_word4 = words[words.index(Yesterdays_Wordle)- 11]
+                next_word4 = words[words.index(Yesterdays_Wordle)+ 11]
                 #Output 
                 today = next_word + next_word1 + next_word2 + next_word3 + next_word4
                 print("Todays wordle is : "+ today)
