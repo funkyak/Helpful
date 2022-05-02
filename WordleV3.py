@@ -87,58 +87,58 @@ def search():
     
 
     def website():
-
+        while True:
         
-        print ('1 -- Test website' )
-        print ('2 -- Live Website' )
-        # Live Website Loads new wordle into the text file 
-        print ('3 -- Checking word' )
-        print ('4 -- New word' )
-        print ('5 -- Load yesterdays word')
-        print ('6 -- Exit' )
-        print("")
-        option = int(input('Enter your choice: ')) 
-
-        if option == 1:
-            print("Loading Test website")
-            webbrowser.open('file:///C:/Users/Rory/Documents/wordle.html')
-            
-            Entering()
-
-
-        elif option == 2:
-            print("Loading Live Website")
-            webbrowser.open('https://www.nytimes.com/games/wordle/index.html')
-            Entering()
-
-        elif option == 3:
-            print(yesterdays)
-
-        elif option == 4:
-            with open('yesterdays.txt', "w") as today_wordle:
-                today_wordle.write(today)
-                print(today)
-        
-        elif option == 5:
-            #failing here 
+            print ('1 -- Test website' )
+            print ('2 -- Live Website' )
+            # Live Website Loads new wordle into the text file 
+            print ('3 -- Checking word' )
+            print ('4 -- New word' )
+            print ('5 -- Load yesterdays word')
+            print ('6 -- Exit' )
             print("")
-            
-            with open('new_word.txt', "w") as T:
-                T.write(before)
-                T.close()
-                print(before)
+            option = int(input('Enter your choice: ')) 
+
+            if option == 1:
+                print("Loading Test website")
+                webbrowser.open('file:///C:/Users/Rory/Documents/wordle.html')
+
+                Entering()
 
 
-        elif option == 6:
-            #exit function
-            print('BYE :-)')
-            exit()
+            elif option == 2:
+                print("Loading Live Website")
+                webbrowser.open('https://www.nytimes.com/games/wordle/index.html')
+                Entering()
 
-        else:
-            #Error function
-            print("Please enter between 1 - 6")
+            elif option == 3:
+                print(yesterdays)
 
-        time.sleep(3)
+            elif option == 4:
+                with open('yesterdays.txt', "w") as today_wordle:
+                    today_wordle.write(today)
+                    print(today)
+
+            elif option == 5:
+                #failing here 
+                print("")
+
+                with open('new_word.txt', "w") as T:
+                    T.write(before)
+                    T.close()
+                    print(before)
+
+
+            elif option == 6:
+                #exit function
+                print('BYE :-)')
+                exit()
+
+            else:
+                #Error function
+                print("Please enter between 1 - 6")
+
+            time.sleep(3)
         
     website()
 
